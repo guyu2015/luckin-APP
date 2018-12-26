@@ -1,10 +1,13 @@
 <template>
-    
+    <div class="mine-wrapper" :style="{'height':contentHeight+'px'}">
+        <div>mine</div>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "shopping"
+        props:{"content-height":Number},
+        name: "mine"
     }
 </script>
 

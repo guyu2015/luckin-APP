@@ -1,0 +1,96 @@
+ul{
+    padding: 0;
+}
+.enterWrapper{
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.enterPrice-pic{
+    width: 100%;
+}
+.enterPrice-pic img{
+    width: 100%;
+    height: auto;
+}
+.enterPrice-bottom{
+    position: relative;
+    width: 100%;
+
+}
+
+.enterPrice-bottom-content{
+    position: absolute;
+    top: -20px;
+    left: 5%;
+    width: 90%;
+    height: 800px;
+    margin: -20px auto;
+    border-radius: 4px;
+    background: #f5f5f6;
+    box-shadow:0 0 5px 0 dodgerblue;
+}
+.enterPrice-bottom-apply{
+    width: 80%;
+    height: 40px;
+    background: blue;
+    -webkit-border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 20px auto;
+
+}
+.enterPriceList{
+    width: 100%;
+}
+.enterPriceItem{
+    width: 100%;
+}
+.enterPriceItem img{
+    display: inline-block;
+    float: left;
+    width: 10%;
+    height: auto;
+}
+.enterPriceItem .enterPriceItem-content {
+    margin-left:3%;
+    width: 80%;
+}
+.enterPriceItem-content p{
+    font-size: 2rem;
+
+}
+.enterPriceItem-content div{
+    font-size: 0.5rem;
+    color: gray;
+}
+.application-progress{
+    width: 90%;
+
+}
+.progress{
+    width:100% ;
+    line-height: 60px;
+    text-align: center;
+}
+
+.progressUl li{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.8rem;
+}
+.progressUl li img{
+    display: inline-block;
+    float: left;
+    width: 10%;
+    height: auto;
+}
+.progressUl li p{
+    width: 80%;
+    float: left;
+    margin-left: 3%;
+}

@@ -1,24 +1,29 @@
 <template>
     <div id="app">
-        <router-view></router-view>
-        <footer-text/>
+        <router-view :contentHeight="contentHeight"></router-view>
+        <nav-text  v-if="$route.meta.isShow" />
     </div>
 </template>
 
 <script>
-    import footer from './components/footer/image/footer.vue'
+    import navText from './components/navgater/navgater.vue'
 
     export default {
         name: 'app',
         data(){
-
+            return{
+                contentHeight:""
+            }
         },
         mounted(){
+            let height = window.screen.height
             // let dpr = window.devicePixelRatio;
-            // console.log(dpr)
+            // console.log(height-64);
+            this.contentHeight = height-64;
+
         },
         components: {
-            "footer-text": footer
+            "nav-text": navText
         }
     }
 </script>

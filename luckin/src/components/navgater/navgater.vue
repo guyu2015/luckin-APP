@@ -2,9 +2,10 @@
     <div class="foot_wrapper">
         <div class="footer">
             <ul class="footer_list">
-                <li class="item" @click="clickItem(index)" v-for="(item,index) in footerList" :key="index" :style="{color:item.flag ? '#172991':'#b4d2f1'}">
+                <li class="item" @click="clickItem(index)" v-for="(item,index) in footerList" :key="index">
                     <img :src="item.flag ? item.src1 : item.src2" />
-                    <div><router-link :to="item.path">{{item.title}}</router-link></div>
+                    <div><router-link :to="item.path"  :style="{color:item.flag ? '#172991':'#b4d2f1'}">{{item.title}}</router-link></div>
+
                 </li>
             </ul>
         </div>
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-    import "../../../assets/css/footer.css"
+    import "../../assets/css/navgater.css"
     import mine from "./image/mine.png"
     import mine0 from "./image/mine0.png"
     import drink from "./image/drink.png"
@@ -28,10 +29,10 @@
             return{
                footerList:[
                    {src1:logo,src2:logo0,title:"首页",flag:true,path:"/Home"},
-                   {src1:drink,src2:drink0,title:"菜单",flag:false,path:"/menu"},
-                   {src1:order,src2:order0,title:"订单",flag:false,path:"/order"},
-                   {src1:shopping,src2:shopping0,title:"购物车",flag:false,path:"/shopping"},
-                   {src1:mine,src2:mine0,title:"我的",flag:false,path:"/mine"},
+                   {src1:drink,src2:drink0,title:"菜单",flag:false,path:"/Menu"},
+                   {src1:order,src2:order0,title:"订单",flag:false,path:"/Order"},
+                   {src1:shopping,src2:shopping0,title:"购物车",flag:false,path:"/Shopping"},
+                   {src1:mine,src2:mine0,title:"我的",flag:false,path:"/Mine"},
                ]
             }
         },
@@ -47,7 +48,7 @@
                 }
             }
         },
-        name: "footer"
+        name: "navgater"
     }
 </script>
 
